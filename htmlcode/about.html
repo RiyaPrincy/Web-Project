@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+   <ul><li><a href="main.html"><h1><b>BACK TO HOME<b></h1></a></li></ul>
+
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>ABOUT</h2>
+      <p>Cybercrime is any criminal activity that involves a computer, networked device or a network. While most cybercrimes are carried out in order to generate profit for the cybercriminals, some cybercrimes are carried out against computers or devices directly to damage or disable them.
+</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>categories of cyber crime</h2>
+<div><i>Cyber crimes are categorized into three broad categories, individual, property and government. Based on each category of cyber crime, cybercriminals use different levels and types of threats.</i></div>
+
+<ol> <li>Individual: This cyber crime category includes disseminating malicious or illegal information via the internet and digital-applications by one person. Cyber speaking, pornography distribution, and trafficking are a few examples of this category of cyber crime.</li>
+<li>Property: This cyber crime is similar to a real-life incident where a criminal keeps the bank or credit card information illegally. The hacker steals an individual’s bank details to acquire money or makes phishing scams online to obtain information from people.</li>
+<li>Government: It is the least frequent cyber crime, but it is the most serious misconduct. A cyber crime against the government is also regarded as Cyber Terrorism. Government cyber crime involves the hacking of websites, military websites, or the distribution of government propaganda.</li></ol>
+
+</div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>Types of cyber crime</h2>
+      <ul>
+      <li>Web Attacks</li>
+<li>SQL Injections</li>
+<li>Cross-Site Scripting</li>
+<li>DDoS Attacks</li>
+<li>Password Attacks</li>
+<li>Eavesdropping Attacks</li>
+<li>Brute-Force and Dictionary Network Attacks</li>
+<li>Insider Threats</li>
+<li>Man-in-The-Middle Attacks</li>
+<li>AI-powered Attacks</li>
+<li>Drive-by Attacks</li>
+<li>Phishing Attacks</li>
+<li>Spear Phishing Attacks</li>
+<li>Whale Phishing Attacks</li>
+<li>Malware</li>
+<li>Ransomware</li>
+<li>Trojan Horses</li>
+<li>Teardrop Attack</li>
+<li>Ping of Death Attack</li>
+<li>PuP’s</li>
+</ul>
+</div>
+</div>
+  <div class="container right">
+    <div class="content">
+      <h2>Explanation</h2>
+      <br><b>1. WEB ATTACKS </b></br>
+<p>A web attack affects the computer via the internet. These viruses can be downloaded from the internet and end up causing large-scale and irreversible damages to your system</p>
+
+<b>2. SQL INJECTIONS</b><br>
+<p>SQL injection is a type of cyber crime that effectively employs malicious codes and manipulates backend databases to access information that is not intended to be displayed. These mostly involve private and sensitive data items including the likes of user lists and customer details, among others. SQLI can have long-term devastating effects such as deletion of tables, unauthorized viewing of any user list, and even administrative access to databases.</p>
+
+<b>3. CROSS-SITE SCRIPTING</b><br>
+<p>Cross-Site is another type of injection breach where attackers send malicious scripts from websites that are deemed responsible or reputed. Attackers inject malicious codes into trusted websites and applications and when a user visits such infected web page, the malicious JavaScipt code is executed on the user’s browser. This code can be used to steal important information like username and password.</p>
+
+<b>4. DDOS ATTACKS</b><br>
+<p>These are the attacks that aim at shutting down services or networks and making them inaccessible to the intended users. These attacks overwhelm the target with a lot of traffic and flood the same with information that can cause the website to crash. DDoS Attacks are targeted primarily at web servers of high-profile organizations such as the government or trade firms.</p>
+
+<b>5. PASSWORD ATTACKS</b><br>
+
+<p>These are simply meant to decrypt or even attempt to obtain a user’s password with the help of criminal intentions. Attackers can use Dictionary Attacks, Password Sniffers, or even Cracking programs in such cases. These attacks are conducted by accessing passwords that are exported or stored in a file.</p>
+
+<b>6. EAVESDROPPING ATTACKS</b><br>
+<p>Eavesdropping attack begins with the interception of network traffic. This type of cyber crime is also known as Sniffing or Snooping. In this type of cyber crime, individuals attempt to steal information that computers, smartphones, or other devices receive or send.</p>
+
+<b>7. BRUTE-FORCE AND DICTIONARY NETWORK ATTACKS</b><br>
+<p>These are networking attacks where attackers attempt to directly log into the user’s accounts by checking and trying out different possible passwords until they find the correct ones.</p>
+
+<b>8. INSIDER THREATS</b><br>
+<p>Not all of the network attacks are executed by outsiders. The inside attack is a very common type of cyber crime. It is performed on a network or a system by individuals who have authorized access to the same system.</p>
+
+<b>9. MAN-IN-THE-MIDDLE ATTACKS</b><br>
+
+
+<p>A man-in-the-middle attack occurs when attackers eavesdrop on the communication between two entities. This type of cyber crime affects both the communicating parties as the attacker can do anything with the interpreted information.</p>
+
+<b>10. AI-POWERED ATTACKS</b><br>
+<p>Computer systems are now programmed to learn and teach themselves, and these AI-powered attacks mark a new type of cyber crime that is bound to get more sophisticated with time.</p>
+
+<p>AI is employed in many everyday applications with the help of algorithmic processes referred to as Machine Learning. This software is aimed at training computers to perform specific tasks all on their own. They can also accomplish these tasks by teaching themselves about obstacles that can potentially hinder their progress. AI can also hack many systems, including autonomous drones and vehicles, and convert them into potentially dangerous weapons. The AI-powered applications can be used for performing cyber crimes such as Password Cracking, Identity Theft, and automated, efficient and robust attacks.</p>
+
+<b>11. DRIVE-BY ATTACKS</b><br>
+<p>Drive-by attacks are used to spread malware through insecure websites. Hackers first look for websites with lesser security parameters and then plant malicious scripts into PHP or HTTP code onto one of the pages. The script can then directly install the malware onto the computer of anyone who visits the site.</p>
+
+<b>12. PHISHING ATTACKS</b><br>
+<p>The Phishing Attack is a Social Engineering attack that is used to steal precious data such as login credentials or credit card details as attackers pretend to be trusted individuals and trick victims into opening malicious links.</p>
+
+<b>13. SPEAR PHISHING ATTACKS</b><br>
+<p>These attacks are aimed at specific organizations’ data by individuals who desire unauthorized access. These hacks aren’t executed by any random attackers but by individuals who are trying to access specific information like trade secrets, military intelligence, etc.</p>
+
+<b>14. WHALE PHISHING ATTACKS</b><br>
+<p>A Whale Phishing Attack is a type of Phishing that generally attacks people with high statures, such as CFOs or CEOs. It primarily aims at stealing information as these individuals typically have unlimited access and are involved with sensitive data.</p>
+
+<b>15. MALWARE</b><br>
+<p>Malware is an umbrella term for a code/program that is intentionally built to affect or attack computer systems without the user’s consent.</p>
+
+<b>16. RANSOMWARE</b><br>
+<p>Ransomware generally blocks victim’s access to their own data and deletes the same if a ransom is not paid.</p>
+
+<b>17. TROJAN HORSES</b><br>
+<p>Trojan Horse is a type of malicious software program which attempts to disguise itself to appear useful. It appears like a standard application but causes damage to data files once executed.</p>
+
+<b>18. TEARDROP ATTACK</b><br>
+<p>Teardrop attack is a form of attack that causes fragmentation in the general sequence of Internet Protocol (IP) packets and sends these fragmented packets to the victim’s machine that is attacked.</p>
+
+<b>19. PING OF DEATH ATTACK</b><br>
+<p>The Ping of Death Attack is a type of cyber crime where IP packets ping target systems with IP sizes that are much over the maximum byte limit.</p>
+
+<b>20. PUPS</b><br>
+<p>PUPs is an abbreviation for Potentially Unwanted Programs. These are a form of malware that is less threatening than other types of cyber crimes. This type of attack uninstalls the required search engine and pre-downloaded apps in your systems. Therefore, it is a good idea to install antivirus software to prevent malicious download.</p>
+
+
+
+
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>prevention about cyber crime</h2>
+<p>At an individual level, cyber security attacks can lead to identity theft and extortion attempts, which can do serious damage to that individual's life. We all rely on the safety of our data and personal information.</p>
+
+</div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>Conclusion</h2>
+<p>Though not all people are victims to cyber crimes, they are still at risk. Crimes by computer vary, and they don't always occur behind the computer, but they executed by computer. The hacker's identity is ranged between 12 years young to 67years old.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

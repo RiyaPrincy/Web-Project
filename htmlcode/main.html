@@ -1,0 +1,544 @@
+<html>
+<head>
+    
+<style>
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #a79e84;
+  
+}
+
+li {
+  float: left;
+  border-right:6px solid #bbb;
+  
+}
+li:last-child {
+  border-right: none;
+  
+}
+
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 19px 25px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #686256;
+  
+}
+
+.active {
+  background-color: #a79e84 ;
+  
+}
+
+
+</style>
+</head>
+<body>
+
+
+<ul>
+ <li><a class="active" href="#home">HOME</a></li>
+  <li><a href="about.html">ABOUT</a></li>
+  <li><a href="dashboard.html">DASHSBOARD</a></li>
+  <li><a href="login.html">SIGNUP/LOGIN</a></li>
+  <li><a href="tracking.html">TRACKING</a></li>
+  <li><a href="realnews.html">NEWS AND UPDATES</a></li>
+  <li><a href="feedback.html">FEEDBACK</a></li>
+  <li style="float:right"><a href="repcomp.html">REPORT/COMPLAINT</a></li>
+</ul>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.main{
+  background-image: url(mainbg.jpg);
+  background-attachment: fixed;
+}
+</style>
+</head>
+<body class="main">
+    
+    
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="r1.1.jpg" style="width:85%">
+  <div class="text">1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="online-shopping-scam.jpg" style="width:85%">
+  <div class="text">2</div>
+</div>
+
+<div class="mySlides fade">
+
+  <div class="numbertext">3 / 6</div>
+  <img src="img2.jpg"  style="width:100%">
+  <div class="text">3</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="final3.png" style="width:100%">
+  <div class="text">4</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="final4.jpg"style="width:100%">
+  <div class="text">5</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="final5.png" style="width:100%">
+  <div class="text">6</div>
+</div>
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+
+
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<style>
+  .box{
+    width:1000px;
+    border: 10px inset;
+    padding: 80px;
+    margin: 250px;
+    background-color: #bbb;
+
+  }
+  .boxx{
+    width:1000px;
+    border: 9px inset;
+    padding: 50px;
+    margin: 250px;
+    background-color: #bbb;
+  }
+  .video{
+    width:1000px;
+    border: 9px inset;
+    padding: 50px;
+    margin: 250px;
+    background-color:gray;
+  }
+    
+  
+
+</style>
+
+<div class="box">
+  <h1> <b>Filing a Complaint on online Cyber Crime Reporting Portal </b> </h1>
+  
+    <p> This portal is used for victims/complainants to report cyber crime complaints online. 
+    This portal caters to complaints pertaining to cyber crimes only with special focus on cyber crimes against all citizens in india.
+     Complaints reported on this portal are dealt by law enforcement agencies/ police based on the information available in the complaints. It is imperative to provide correct and accurate details while filing complaint for prompt action.</li>
+
+   <ul>
+  <li> <b>Please contact local police in case of an emergency or for reporting crimes other than cyber crimes. National police helpline number is 100. National women helpline number is 181.</b></li>
+   </ul>
+</div>
+
+<div class="boxx">
+  <h3><b>How we can deal with the challenge?  </b></h3>
+  <ul>
+<li>Responding to a question in Lok Sabha on March 16, 2022, junior information technology minister Rajeev Chandrasekhar listed out several government initiatives to combat cyber crimes. Chandrasekhar said the Centre has implemented a number of programmes “with the objective of capacity building in the area of information security, training of government personnel and creation of mass information security awareness”. </li>
+<li>However, on our end too, we can ensure several steps so as not to fall prey to cyber crimes. Securing our Internet network and financial details with strong passwords, ensuring that our software is up-to-date, ignoring pop-ups, controlling personal and private data, and not responding to suspicious calls, texts and mails are some of the steps that might keep us safe from cyber fraud. </li>
+</div>
+</ul>
+
+<div class="video">
+  <h1><i>WHEN USING SOCIAL MEDIA REMEMBER THIS POINTS..</i></h1>
+  <video width="800" height="500" controls>
+    <source src="awarnesss video.mp4" type="video/mp4">
+    
+  </video>
+  
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:"sofia", Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 500px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+<h2><i>CYBER CRIME AWARENESS:</i></h2>
+</header>
+
+<section>
+  <nav>
+    <h3>What is cybercrime awareness?</h3>
+    <ol> 
+   <li> When we consider the wide strata of users, from tech-savvy to new users, as well as different socio-economic conditions, demographics, culture and age, making users aware about the risk and saving them from cyber frauds is a challenge before law enforcement agencies as well as the government. </li>
+   <li>It can instill good cybersecurity hygiene—habits that will make it easier for them to avoid falling victim to security threats in the future—and facilitate an organizational culture built around threat prevention and mitigation.</li>
+  <li> I4C has a National Cyber Crime Reporting Portal (NCRP) i.e. www.cybercrime.gov.in wherein all the complaints pertaining to cyber crimes are reported by the citizens. I4C also has a National Helpline Number 1930, wherein the financial cyber fraud complaints are reported by the citizens.</li>
+
+
+   </ol>
+  </nav>
+  
+  <article>
+    <h1>safety tips for cyber crime:</h1>
+    <ul>
+    <li>Malware attacks</li>
+<li>Phishing</li>
+<li>Distributed DoS attacks</li>
+<li>Keep software and operating system updated</li>
+<li>Use anti-virus software and keep it updated</li>
+<li>Use strong passwords</li>
+<li>Never open attachments in spam emails</li>
+<li>Do not click on links in spam emails or untrusted websites</li>
+
+<li>Train your staff</li>
+<li>Keep your software and systems fully up to date</li>
+<li>Ensure Endpoint Protection</li>
+<li>Install a Firewall</li>
+<li>Backup your data</li>
+<li>Control access to your systems</li>
+<li>Wifi Security</li>
+<li>Employee personal accounts</li>
+<li>access mannagement</li>
+<li>password</li>
+<li> Ensure your software is up-to-date</li>
+<li>Don’t fall for pop-ups</li>
+<li>Secure your internet network with a strong encryption password and a VPN</li>
+<li>manage your social media settings</li>
+<li> Protect yourself from identity threats</li>
+<li>Educate your children about internet risks</li>
+<li>Secure your computer and mobile devices</li>
+<li>Protect your financial details</li>
+<li>Protect your data</li>
+<li>Know what to do if you become a victim of cybercrime</li>
+<li>Contact the banks and companies where the fraud occurred.</li>
+<li>Place fraud alerts and get your credit reports.</li>
+<li>Register complaint with Cyber Cell or Local Police station.</li>
+<li>buy trusted online products </li>
+<li>Organizations are finding themselves under the pressure of being forced to react quickly to the dynamically increasing number of cybersecurity threats.</li>
+<li>Since the attackers have been using an attack life cycle, organizations have also been forced to come up with a vulnerability management life cycle</li>
+<li>read news about cyber crime</li>
+<li>reduce using mobile phones</li>
+<li>Cybercrime is criminal activity that either targets or uses a computer, a computer network or a networked device.</li>
+<li>Most, but not all, cybercrime is committed by cybercriminals or hackers who want to make money. Cybercrime is carried out by individuals or organizations.</li>
+<li>Many countries and organizations around the world are fighting to stop cybercriminals and help to make systems more secure. </li>
+<li>However, one of the best methods of prevention is through education.</li>
+<li>manage password</li>
+<li>Secure your Network</li>
+<li>don't watch unwanted advertisement in online browser.</li>
+</ul>
+
+
+  </article>
+</section>
+
+<footer>
+  <p>Though not all people are victims to cyber crimes, they are still at risk. Crimes by computer vary, and they don't always occur behind the computer, but they executed by computer. The hacker's identity is ranged between 12 years young to 67years old.
+</p>
+</footer>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color:blueviolet;
+  color:black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.462);
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: rgb(255, 255, 255);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+
+
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="msg.php" method="post" class="form-container">
+    <h1><b>Any question?</b></h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" id="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+
+
+
+</body>
+
+</html> 
